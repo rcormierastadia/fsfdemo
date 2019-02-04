@@ -1,0 +1,35 @@
+Feature: Automate validation
+  validation should be quick and easy to maintain and run.
+
+  Background: 
+    Given that I loaded the Marketing Email Rule Order JSON file
+    And that I loaded the Rules JSON file
+    And there are no orphan Rules
+    Then I connect to the Data File Under Test
+    And there are data available
+    And all Rules are correct
+
+  @REGRESSION
+  Scenario: See what credit declines are questionable based on selected rules in the data set under test.
+    The tester should see credit declines that are in relation to the data file provided..
+    When I enter the Rule number "1008"
+    Then I should see credit declines that are questionable related to the data file
+
+  @REGRESSION
+  Scenario: See what credit declines are questionable based on on selected rules and an Overlay with CM 4 True in the data set under test.
+    The tester should see credit declines that are questionable in relation to the data file provided..
+
+    When I enter the Rule number "1008"
+    And I have a Overlay with CM 4 equal to True
+    Then I should see credit declines that are questionable in relation to the data file provided
+
+  @REGRESSION
+  Scenario: See what credit declines are questionable based on on selected rules and an Overlay with CM 4 True in the data set under test.
+    The tester should see credit declines that are questionable in relation to the data file provided..
+
+    When I enter the Rule number "1008"
+    Then I should see credit declines that are questionable in relation to the data file provided
+    And I have a RISK_SCORE_2 equal to 1 or 2
+    And I have a CUST_MOD_3_FIN_SCR_DEC equal to 3
+    
+

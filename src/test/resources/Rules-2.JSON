@@ -1,0 +1,98 @@
+{
+  "Rules": [
+   {
+    "1002": [
+      {
+        "column": "DECEASED_IN",
+        "condition": "=",
+        "value": "Y",
+        "logic": "OR"
+      },
+      {
+        "column": "FICO_SCORE",
+        "condition": "=",
+        "value": 9001,
+        "logic": "OR"
+      },
+      {
+        "column": "TU_VANTAGE_3",
+        "condition": "=",
+        "value": 1,
+        "logic": "OR"
+      },
+      {
+        "column": "RISK_SCORE_1",
+        "condition": "=",
+        "value": 1,
+        "logic": "OR"
+      },
+      {
+        "column": "CUST_MOD_3_FIN_SCR",
+        "condition": "=",
+        "value": 101,
+        "logic": "OR"
+      },
+      {
+        "column": "CUST_MOD_4_FIN_SCR",
+        "condition": "=",
+        "value": 101,
+        "logic": "OR"
+      },
+      {
+        "column": "CUST_MOD_6_FIN_SCR",
+        "condition": "=",
+        "value": 101,
+        "logic": "OR"
+      },
+      {
+        "column": "CUST_MOD_7_FIN_SCR",
+        "condition": "=",
+        "value": 101,
+        "logic": "OR"
+      }
+    ],
+    "1004": [
+      {
+        "column": "RECENT_APPL_IN",
+        "condition": "=",
+        "value": "Y"  
+      }
+    ],
+    "1008": [
+      {
+        "column": "BANK_ACCT_CD",
+        "condition": "=",
+        "value": 4
+      }
+    ],
+    "1010": [
+      {
+        "column": "INMARKET_IN",
+        "condition": "=",
+        "value": "N"
+      }
+    ],
+    "1013": [
+      {
+        "column": "BUREAU_ERROR_CD",
+        "condition": "=",
+        "value": "Y",
+        "logic": "OR"
+      },
+      {
+        "column": "UNDER18_IN",
+        "condition": "=",
+        "value": "Y"
+      }
+    ],
+	 "1005": [
+      {
+        "column": "OLLO_OPEN_ACCT_CT",
+        "condition": "=",
+        "value": "Yes"
+      }
+    ]
+	}
+	]
+  }
+}

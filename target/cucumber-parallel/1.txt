@@ -1,0 +1,1 @@
+/home/centos/ron-demo/test-fsf/fsf/src/test/resources/FSF-Rules-1008-1002-scenario-outline.feature:18

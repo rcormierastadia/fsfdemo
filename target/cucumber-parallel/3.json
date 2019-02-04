@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 98873194,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "that I loaded the Marketing Email Rule Order JSON file",
+            "match": {
+              "location": "AppTestSteps.that_i_loaded_the_marketing_email_rule_order_json_file()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14297,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "that I loaded the Rules JSON file",
+            "match": {
+              "location": "AppTestSteps.that_i_loaded_the_rules_json_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13881,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "there are no orphan Rules",
+            "match": {
+              "location": "AppTestSteps.there_are_no_orphan_rules()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13357,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I connect to the Data File Under Test",
+            "match": {
+              "location": "AppTestSteps.i_connect_to_the_data_file_under_test()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12780,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "there are data available",
+            "match": {
+              "location": "AppTestSteps.there_are_data_available()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15197,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "all Rules are correct",
+            "match": {
+              "location": "AppTestSteps.all_rules_are_correct()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 98882,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppTestSteps.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Validate Policy Rule 1008",
+        "description": "",
+        "id": "automate-validation;validate-policy-rule-1008",
+        "after": [
+          {
+            "result": {
+              "duration": 17717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppTestSteps.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30800437,
+              "error_message": "java.lang.Exception: Policy Rule:1008  is not matching in row numbers: 453,\n\tat demo.web.test.fr.RuleManager.verifyRule(RuleManager.java:79)\n\tat demo.web.test.fr.AppTestSteps.i_enter_the_first_rule_number_something(AppTestSteps.java:51)\n\tat ✽.When I enter the First Rule number \"1008\"(/home/centos/ron-demo/test-fsf/fsf/src/test/resources/FSF-Rules-1008-1002.feature:14)\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "I enter the First Rule number \"1008\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1008",
+                  "offset": 31
+                }
+              ],
+              "location": "AppTestSteps.i_enter_the_first_rule_number_something(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@REGRESSION"
+          }
+        ]
+      }
+    ],
+    "name": "Automate validation",
+    "description": "validation should be quick and easy to maintain and run.",
+    "id": "automate-validation",
+    "keyword": "Feature",
+    "uri": "/home/centos/ron-demo/test-fsf/fsf/src/test/resources/FSF-Rules-1008-1002.feature"
+  }
+]

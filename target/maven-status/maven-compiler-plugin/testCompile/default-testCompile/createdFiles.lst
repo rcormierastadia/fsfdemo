@@ -1,0 +1,10 @@
+Parallel02IT.class
+demo/web/test/fr/component/AppTestManager.class
+demo/web/test/fr/DemoWebAppFunctionalTestRunner.class
+demo/web/test/fr/component/RemoteWebDriverManager.class
+Parallel01IT.class
+Parallel04IT.class
+demo/web/test/fr/Rule.class
+demo/web/test/fr/AppTestSteps.class
+demo/web/test/fr/RuleManager.class
+Parallel03IT.class

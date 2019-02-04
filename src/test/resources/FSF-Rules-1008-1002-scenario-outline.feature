@@ -1,5 +1,5 @@
 
-@REGRESSION
+
 Feature: Scenario Outline Parallel Validation
   I want to test the rules in the scenario outline
   Background: 
@@ -13,8 +13,12 @@ Feature: Scenario Outline Parallel Validation
 
   Scenario Outline: Validate Policy Rules for both 1008 and 1002
 		When I enter the Rule number <ruleno>
-    
-    Examples: 
+  @REGRESSION
+  Examples: 
       | ruleno | 
       | 1008 | 
+ 
+  @REGRESSION
+  Examples: 
+      | ruleno | 
       | 1002 |

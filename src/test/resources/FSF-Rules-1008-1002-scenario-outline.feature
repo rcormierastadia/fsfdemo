@@ -1,6 +1,6 @@
 
 
-Feature: Title of your feature
+Feature: Validate mutiple rules
   I want to test the rules in the scenario outline
   Background: 
     Given that I loaded the Marketing Email Rule Order JSON file

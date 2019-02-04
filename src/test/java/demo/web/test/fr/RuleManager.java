@@ -17,7 +17,7 @@ public class RuleManager {
 	   
 	public void verifyRule(String ruleno)throws Throwable {
 		   
-		        String csvFile = "files/Astadia_FSF.csv";
+		        String csvFile = "files/Astadia_FSF_1002_Fail.csv";
 		        String line = "";
 		        String cvsSplitBy = ",";
 		        Rule x = new Rule();

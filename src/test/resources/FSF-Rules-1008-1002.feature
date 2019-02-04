@@ -1,4 +1,4 @@
-Feature: Parallel Validation of Rules 1008 and 1002
+Feature: Parallel Validation of Rules 1008 and 1002 Ron
   validation should be quick and easy to maintain and run.
 
   Background: 

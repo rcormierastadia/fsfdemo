@@ -10,9 +10,10 @@ Feature: Parallel Validation of Rules 1008 and 1002
     And all Rules are correct
 
   @REGRESSION
-  Scenario: Validate Policy Rule 1008 and 1002
+  Scenario: Validate Policy Rule 1008
     When I enter the Rule number 1008
-    When I enter the Rule number 1002
  
-
+  @REGRESSION
+  Scenario: Validate Policy Rule 1008 and 1002
+    When I enter the Rule number 1002
  

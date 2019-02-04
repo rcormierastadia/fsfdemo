@@ -41,8 +41,7 @@ public class RuleManager {
 			                trule.CUST_MOD_4_FIN_SCR = rules[80];
 			                trule.CUST_MOD_6_FIN_SCR = rules[84];
 			                trule.CUST_MOD_7_FIN_SCR = rules[88];
-			                
-
+			               
 			                rulelist.add(trule);
 			            }
 
@@ -51,10 +50,10 @@ public class RuleManager {
 		        //}
 		       
 		        rulelist.remove(0);
-		        System.out.println("listsize=" + rulelist.size() + " ruleno="+ ruleno);
+		       // System.out.println("listsize=" + rulelist.size() + " ruleno="+ ruleno);
 		        int linenumber = 1;
 		        String tmp ="";		        
-		        String strmsg="Policy Rule:" + ruleno + "  is not matching in row numbers: ";
+		        String strmsg="Policy Rule: " + ruleno + " is not matching in row numbers: ";
 		        Boolean iserror = false;
 		        for (Rule item : rulelist) {
 		        	if (ruleno.equals("1008")){
@@ -65,8 +64,8 @@ public class RuleManager {
 			        	}
 		        	}
 		        	if (ruleno.equals("1002")){
-			        	//if (item.UNDRWRTE_STRAT_IN.equals("6") && item.POLICY_RULES_USED.equals(ruleno) || !item.DECEASED_IN.equals("Y") || !item.FICO_SCORE.equals("9001") || !item.TU_VANTAGE_3.equals("1") || !item.RISK_SCORE_1.equals("1") || !item.CUST_MOD_3_FIN_SCR.equals("101") || !item.CUST_MOD_4_FIN_SCR.equals("101") || !item.CUST_MOD_6_FIN_SCR.equals("101") || !item.CUST_MOD_7_FIN_SCR.equals("101")){
-		        		if (item.UNDRWRTE_STRAT_IN.equals("6") && item.POLICY_RULES_USED.equals(ruleno) && !item.DECEASED_IN.equals("Y") && !item.FICO_SCORE.equals("9001") && !item.TU_VANTAGE_3.equals("1") && !item.RISK_SCORE_1.equals("1") && !item.CUST_MOD_3_FIN_SCR.equals("101") && !item.CUST_MOD_4_FIN_SCR.equals("101") && !item.CUST_MOD_6_FIN_SCR.equals("101") && !item.CUST_MOD_7_FIN_SCR.equals("101")){
+			        	if (item.UNDRWRTE_STRAT_IN.equals("6") && item.POLICY_RULES_USED.equals(ruleno) && !item.DECEASED_IN.equals("Y") && !item.FICO_SCORE.equals("9001") && !item.TU_VANTAGE_3.equals("1") && !item.RISK_SCORE_1.equals("1") && !item.CUST_MOD_3_FIN_SCR.equals("101") && !item.CUST_MOD_4_FIN_SCR.equals("101") && !item.CUST_MOD_6_FIN_SCR.equals("101") && !item.CUST_MOD_7_FIN_SCR.equals("101")) {
+		        		//if (item.UNDRWRTE_STRAT_IN.equals("6") && item.POLICY_RULES_USED.equals(ruleno) && !item.DECEASED_IN.equals("Y") && !item.FICO_SCORE.equals("9001") && !item.TU_VANTAGE_3.equals("1") && !item.RISK_SCORE_1.equals("1") && !item.CUST_MOD_3_FIN_SCR.equals("101") && !item.CUST_MOD_4_FIN_SCR.equals("101") && !item.CUST_MOD_6_FIN_SCR.equals("101") && !item.CUST_MOD_7_FIN_SCR.equals("101")){
 		        		strmsg = strmsg + (linenumber + 1) + ",";
 			        		iserror=true;
 			        	}
@@ -74,7 +73,7 @@ public class RuleManager {
 		        	linenumber++;
 				
 				}
-		        System.out.println("iserror=" + iserror);
+		        //System.out.println("iserror=" + iserror);
 		        if (iserror){
 		        	throw new Exception(strmsg);
 		        }

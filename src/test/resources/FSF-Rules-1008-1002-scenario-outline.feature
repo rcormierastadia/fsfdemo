@@ -1,6 +1,6 @@
 
 
-Feature: Validate mutiple rules
+Feature: Scenario Outline Parallel Validation
   I want to test the rules in the scenario outline
   Background: 
     Given that I loaded the Marketing Email Rule Order JSON file

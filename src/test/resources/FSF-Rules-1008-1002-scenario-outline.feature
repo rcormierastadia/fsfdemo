@@ -18,7 +18,3 @@ Feature: Scenario Outline Parallel Validation
       | ruleno | 
       | 1008 | 
  
-  @REGRESSION
-  Examples: 
-      | ruleno | 
-      | 1002 |

@@ -17,4 +17,5 @@ Feature: Scenario Outline Parallel Validation
   Examples: 
       | ruleno | 
       | 1008 | 
+      | 1002 |
  

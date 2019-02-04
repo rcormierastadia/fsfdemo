@@ -9,12 +9,12 @@ Feature: Automate validation
     And there are data available
     And all Rules are correct
 
-  @REGRESSION
+  @REGRESSION1
   Scenario: See what credit declines are questionable based on selected rules in the data set under test.
     The tester should see credit declines that are in relation to the data file provided..
     When I enter the First Rule number "1008"
     
-  @REGRESSION
+  @REGRESSION1
   Scenario: See what credit declines are questionable based on on selected rules and an Overlay with CM 4 True in the data set under test.
     The tester should see credit declines that are questionable in relation to the data file provided..
     When I enter the Second Rule number "1002"

@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import demo.web.test.fr.Rule;;
+import demo.web.test.fr.Rule;
 public class RuleManager {
 	   
 	public void verifyRule(String ruleno)throws Throwable {

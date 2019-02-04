@@ -65,7 +65,7 @@
 			         <!-- Generate JUnitReRun runners instead of JUnit and TestNG single runner. --> 
 			         <useTestNGReRun>true</useTestNGReRun>
 			         <!-- It is meaningless to keep reruning without looking for root cause of the failure. Test case/features/scenarios won't pass magically so you can use max 5 rerun. -->
-			               <retryCount>1</retryCount>
+			               <retryCount>2</retryCount>
 			      </configuration>
 			    </execution>
 			  </executions>

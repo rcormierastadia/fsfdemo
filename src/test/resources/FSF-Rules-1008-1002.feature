@@ -11,8 +11,8 @@ Feature: Parallel Validation of Rules 1008 and 1002 Ron
 
   @REGRESSION
   Scenario: Validate Policy Rule 1008 and 1002
-    When I enter the Rule number "1008"
-    When I enter the Rule number "1002"
+    When I enter the Rule number 1008
+    When I enter the Rule number 1002
  
 
  

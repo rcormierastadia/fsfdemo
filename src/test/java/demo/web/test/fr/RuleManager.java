@@ -20,9 +20,9 @@ public class RuleManager {
 		        String csvFile1008_Fail = "files/Astadia_FSF_1008_Fail.csv";
 		        String csvFile1002_Fail = "files/Astadia_FSF_1002_Fail.csv";
 		        
-		        //String csvFile = csvFilePass;
+		        String csvFile = csvFilePass;
 		        //String csvFile = csvFile1008_Fail;
-		        String csvFile = csvFile1002_Fail;
+		        //String csvFile = csvFile1002_Fail;
 		        
 		        String line = "";
 		        String cvsSplitBy = ",";
